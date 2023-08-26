@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    
+    <title>Online book store management</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="#" class="logo"> <i class="fas fa-book"></i> Bookstore </a>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            
+          <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+    </div>
+    
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#featured">featured</a>
+            <a href="#arrivals">arrivals</a>
+            <a href="#reviews">reviews</a>
+            
+        </nav>
+    </div>
+
+</header>
+
+
+
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+    <a href="#reviews" class="fas fa-comments"></a>
+    <a href="#blogs" class="fas fa-blog"></a>
+</nav>
+
+
+<div class="login-form-container">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <form action="user.html">
+        <h3>User Profile</h3>
+        <span>Name</span>
+        <input type="text" name="fname" class="box" placeholder="enter your name" id="">
+        <span>Email</span>
+        <input type="text" name="email" class="box" placeholder="enter your email" id="">
+        <span>Phone No:</span>
+        <input type="text" name="pno" class="box" placeholder="enter your phone number" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> remember me</label>
+        </div>
+        <input type="submit" value="SAVE" class="btn">
+        
+    </form>
+
+</div>
+
+<section class="home" id="home">
+
+    <div class="row">
+
+        <div class="content">
+            <h3>upto 50% off</h3>
+            <p><b>“The more that you read, the more things you will know. The more that you learn, the more places you’ll go.”</b></p>
+            <a href="buy.html" class="btn">shop now</a>
+        </div>
+
+        <div class="swiper books-slider">
+            <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide"><img src="book1.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="book2.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="book3.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="book4.jpg" alt=""></a>
+               
+            </div>
+            
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>featured books</span> </h1>
+
+    <div class="swiper featured-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="book1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>Available</h2>
+                    <div class="price"> Rs.300.00 <span>Rs.600.00</span></div>
+                    
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="book2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>Available</h2>
+                    <div class="price"> Rs.400.00 <span>Rs.800.00</span></div>
+                    
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+               
+                <div class="image">
+                    <img src="book3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>Available</h2>
+                    <div class="price"> Rs.150.00 <span>Rs.300.00</span></div>
+                  
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="book4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>Available</h2>
+                    <div class="price"> Rs.350.00 <span>Rs.700.00</span></div>
+                   
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="book5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>Available</h2>
+                    <div class="price"> Rs.150.00 <span>Rs.300.00</span></div>
+                   
+                </div>
+            </div>
+
+             <div class="swiper-slide box">
+                
+                <div class="image">
+                    <img src="book6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>Available</h2>
+                    <div class="price"> Rs.400.00 <span>Rs.800.00</span></div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<section class="arrivals" id="arrivals">
+
+    <h1 class="heading"> <span>New Arrivals</span> </h1>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="book11.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>New Arrivals</h2>
+                    <div class="price"> Rs.225.00 <span> Rs.450.00 </span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="book12.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>New Arrivals</h2>
+                    <div class="price"> Rs.300.00 <span> Rs.600.00 </span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="book13.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>new arrivals</h2>
+                    <div class="price"> Rs.200.00 <span> Rs.400.00 </span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a
+
+           
+
+        </div>
+
+    </div>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+         <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="book14.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>New Arrivals</h2>
+                    <div class="price"> Rs.150.00 <span> Rs.300.00 </span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="book15.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2>New arrivals</h2>
+                    <div class="price"> Rs.300.00 <span> Rs.600.00 </span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="swiper-slide box">
+                <div class="image">
+                    <img src="book16.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price"> Rs.400.00 <span> Rs.800.00 </span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+
+           
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="reviews" id="reviews">
+
+    <h1 class="heading"> <span>Customer Reviews</span> </h1>
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="person1.jpg" alt="">
+                <h2>Sterly</h2>
+                <p>Best online book store almost all books are available for preparation of exam realated or other books are available and resanoble prices.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="person2.jpg" alt="">
+                <h2>Jeorge</h2>
+                <p>I like so much this online bookstore much. We are able to get all types of books here with discounts and another promotional offer.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="person3.jpg" alt="">
+                <h2>Rama</h2>
+                <p>This is the best website to purchase the all boks online at very affordable price.I always prefere to reads the book hardcopy not online.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            
+
+        </div>
+
+    </div>
+    
+</section>
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
